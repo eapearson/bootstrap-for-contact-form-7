@@ -531,7 +531,7 @@ class CF7BS_Form_Field extends CF7BS_Component
 
   private function validate_value( $value, $type, $options = array() )
   {
-    if( $type == 'multiselect' || $type == 'checkbox' && is_array( $options ) && count( $options ) > 1 )
+    if( $type == 'multiselect' || $type == 'checkbox' && is_array( $options ) && count( $options ) >= 1 )
     {
       $value = (array) $value;
     }
